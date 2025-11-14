@@ -8,13 +8,20 @@
         <h1>Statistics Calculator</h1>
         <h2>Enter the list of numbers separated by spaces.</h2>
         <form action="method">
-            <label for="get">Number List:</label>
-            <input type="text" id="num" name="number" required>
-        </form>
-        <button id ="btn">Mean</button>
-        <button id ="btn">variance</button>
-        <button id ="btn">Standard deviation</button>
+            <label>Number list:</label>
+            <input id="numList" type="text">
+            <div id="error"></div><br><br>
+            <button id="btnMean">Mean</button>
+  <button id="btnVariance">Variance</button>
+  <button id="btnStdDev">Standard Deviation</button>
+  <button id="btnAll">All</button>
 
-        
+  <div id="results" style="display:none;">
+    <p>Mean: <span id="resMean">—</span></p>
+    <p>Variance: <span id="resVar">—</span></p>
+    <p>Standard Deviation: <span id="resStd">—</span></p>
+  </div>
+
+  <script src="statistics.js"></script>
 </body>
 </html>
